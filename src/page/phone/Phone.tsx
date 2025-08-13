@@ -2,7 +2,7 @@ import { useMutation, useQuery, useQueryClient } from '@tanstack/react-query';
 import { memo, useState, type FormEvent } from 'react';
 import { apiCountry } from '../../api/api';
 
-const Phone = () => {
+const country = () => {
 
     const resetForm = () => {
         setText("");
@@ -80,11 +80,11 @@ const Phone = () => {
         <div>
             <div className="flex justify-center items-center">
                 <form onSubmit={handleSubmit} className='w-[300px] border bg-[#303030] p-[10px] rounded-[7px]' action="">
-                    <h1 className='text-white text-[30px] mb-[10px]'>Country</h1>
-                    <input value={text} required onChange={(e) => setText(e.target.value)} className='border-0 bg-white w-[100%] h-[30px] pl-[5px] rounded-[3px] mb-[10px]' type="text" placeholder='Enter your phone name' />
-                    <input value={price} required onChange={(e) => setPrice(e.target.value)} className='border-0 bg-white w-[100%] h-[30px] pl-[5px] rounded-[3px] mb-[10px]' type="text" placeholder='Enter your phone price' />
-                    <input value={store} required onChange={(e) => setStore(e.target.value)} className='border-0 bg-white w-[100%] h-[30px] pl-[5px] rounded-[3px] mb-[10px]' type="text" placeholder='Enter your phone storage' />
-                    <input value={brand} required onChange={(e) => setBrand(e.target.value)} className='border-0 bg-white w-[100%] h-[30px] pl-[5px] rounded-[3px] mb-[10px]' type="text" placeholder='Enter your phone brand' />
+                    <h1 className='text-white text-[30px] mb-[10px]'>Phone</h1>
+                    <input value={text} required onChange={(e) => setText(e.target.value)} className='border-0 bg-white w-[100%] h-[30px] pl-[5px] rounded-[3px] mb-[10px]' type="text" placeholder='Enter your country name' />
+                    <input value={price} required onChange={(e) => setPrice(e.target.value)} className='border-0 bg-white w-[100%] h-[30px] pl-[5px] rounded-[3px] mb-[10px]' type="text" placeholder='Enter your country price' />
+                    <input value={store} required onChange={(e) => setStore(e.target.value)} className='border-0 bg-white w-[100%] h-[30px] pl-[5px] rounded-[3px] mb-[10px]' type="text" placeholder='Enter your country storage' />
+                    <input value={brand} required onChange={(e) => setBrand(e.target.value)} className='border-0 bg-white w-[100%] h-[30px] pl-[5px] rounded-[3px] mb-[10px]' type="text" placeholder='Enter your country brand' />
                     <button className='border w-[100%] rounded-[3px] mb-[10px] bg-white text-[#303030] h-[30px]' type='submit'>Submit</button>
                 </form>
             </div>
@@ -108,5 +108,5 @@ const Phone = () => {
     );
 };
 
-export default memo(Phone);
+export default memo(country);
 
